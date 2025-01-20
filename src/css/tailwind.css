@@ -1,0 +1,50 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+.title-section {
+  @apply text-3xl text-primary font-semibold mb-6 text-center lg:mb-8;
+}
+
+/* Small Card */
+.card {
+  @apply w-48 h-64 shadow-md rounded-lg flex-none transform transition-all hover:-translate-y-4 hover:shadow-xl;
+}
+
+.card-cover {
+  @apply w-full h-3/5 rounded-t-lg bg-cover;
+}
+
+.card-info {
+  @apply w-full h-2/5 rounded-b-lg p-4 opacity-90;
+}
+
+.card-info-title {
+  @apply font-bold text-xl mb-1.5;
+}
+
+.card-info-subtitle {
+  @apply text-base;
+}
+
+
+
+
+/* Large Card */
+.card-feature {
+  @apply w-full h-96 bg-cover rounded-xl;
+}
+
+.card-feature-opacity {
+  @apply w-full h-full bg-black bg-opacity-10 rounded-lg;
+
+}
+
+.card-feature-title {
+  @apply text-3xl px-8 pt-8 pb-2 font-semibold text-white;
+}
+
+.card-feature-subtitle {
+  @apply text-base pl-8 text-white mr-24;
+}

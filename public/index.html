@@ -1,0 +1,402 @@
+<!DOCTYPE html>
+<html lang="en" class="dark">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../public/css/tailwind.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Pattaya&family=Quicksand:wght@300..700&display=swap"
+      rel="stylesheet"
+    />
+    <title>Octopus Travel</title>
+  </head>
+  <body class="font-montserrat dark:bg-gray-900">
+    <nav
+      class="hidden w-full h-20 bg-primary lg:flex px-10 py-4 justify-between fixed z-10 items-center dark:bg-gray-800"
+    >
+      <div class="h-auto w-auto">
+        <p class="text-2xl text-white font-bold">Octopus Travel</p>
+      </div>
+      <div class="flex space-x-9">
+        <a
+          href="#home"
+          class="font-semibold text-base text-white hover:text-secondary dark:hover:text-primary"
+          >Home</a
+        >
+        <a
+          href="#recommended"
+          class="font-semibold text-base text-white hover:text-secondary dark:hover:text-primary"
+          >Recommended</a
+        >
+        <a
+          href="#featured"
+          class="font-semibold text-base text-white hover:text-secondary dark:hover:text-primary"
+          >Featured</a
+        >
+        <a
+          href="#faqs"
+          class="font-semibold text-base text-white hover:text-secondary dark:hover:text-primary"
+          >Faqs</a
+        >
+        <a
+          href="#about"
+          class="font-semibold text-base text-white hover:text-secondary dark:hover:text-primary"
+          >About us</a
+        >
+      </div>
+      <div class="flex space-x-4">
+        <a href="">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            viewBox="0 0 20 20"
+            fill="currentColor"
+            class="size-6"
+          >
+            <path
+              fill-rule="evenodd"
+              d="M9 3.5a5.5 5.5 0 1 0 0 11 5.5 5.5 0 0 0 0-11ZM2 9a7 7 0 1 1 12.452 4.391l3.328 3.329a.75.75 0 1 1-1.06 1.06l-3.329-3.328A7 7 0 0 1 2 9Z"
+              clip-rule="evenodd"
+              class="fill-current text-white hover:text-secondary dark:hover:text-primary"
+            />
+          </svg>
+        </a>
+        <button id="toggle">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            viewBox="0 0 20 20"
+            fill="currentColor"
+            class="size-6"
+          >
+            <path
+              fill-rule="evenodd"
+              d="M7.455 2.004a.75.75 0 0 1 .26.77 7 7 0 0 0 9.958 7.967.75.75 0 0 1 1.067.853A8.5 8.5 0 1 1 6.647 1.921a.75.75 0 0 1 .808.083Z"
+              clip-rule="evenodd"
+              class="fill-current text-white hover:text-secondary dark:hover:text-primary"
+            />
+          </svg>
+        </button>
+        <a href="">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            viewBox="0 0 20 20"
+            fill="currentColor"
+            class="size-6"
+          >
+            <path
+              d="M10 8a3 3 0 1 0 0-6 3 3 0 0 0 0 6ZM3.465 14.493a1.23 1.23 0 0
+            0 .41 1.412A9.957 9.957 0 0 0 10 18c2.31 0 4.438-.784
+            6.131-2.1.43-.333.604-.903.408-1.41a7.002 7.002 0 0 0-13.074.003Z"
+              class="fill-current text-white hover:text-secondary dark:hover:text-primary"
+            />
+          </svg>
+        </a>
+      </div>
+    </nav>
+    <section class="w-full h-auto">
+      <div id="home">
+        <div class="w-full h-4/5 relative lg:pt-14">
+          <div
+            class="w-full lg:bg-tokyoDesktop lg:h-[500px] lg:bg-cover lg:bg-center"
+          >
+            <img src="./img/tokyo.jpg" alt="" class="lg:hidden w-full
+            h-[375px] bg-cover bg-center" />
+          </div>
+          <div
+            class="w-full h-full flex flex-col absolute top-0 justify-center items-center gap-20"
+          >
+            <input
+              class="outline-none p-3 rounded-full transition duration-300 focus-within:shadow-sm focus:ring-2 focus:w-11/12 lg:hidden"
+              placeholder="Tokyo"
+              type="search"
+            />
+            <div class="hidden h-auto lg:w-1/3 lg:flex">
+              <p
+                class="text-5xl font-bold text-white text-center leading-normal mt-14"
+              >
+                Find beautiful places for your next vacation
+              </p>
+            </div>
+            <button
+              class="bg-white text-lg font-semibold p-3 w-32 text-primary rounded-full transition-all duration-500 ease-in-out hover:bg-primary hover:text-white transform hover:-translate-y-1 hover:scale-110"
+            >
+              Explore
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <div id="recommended" class="p-6 lg:mt-8 lg:mb-10">
+        <p class="title-section dark:text-white">
+          Recommended sites
+        </p>
+        <div
+          class="flex w-auto h-[305px] items-center overflow-x-auto overscroll-x-contain space-x-6 overflow-y-hidden"
+        >
+          <div class="card">
+            <div class="card-cover bg-nagoya bg-center"></div>
+            <div class="card-info bg-secondary dark:bg-gray-700">
+              <p class="card-info-title  text-white">Nagoya</p>
+              <p class="card-info-subtitle text-white">Beautiful temples</p>
+            </div>
+          </div>
+          <div class="card">
+            <div class="card-cover bg-osaka bg-center"></div>
+            <div class="card-info bg-white dark:bg-gray-800">
+              <p class="card-info-title text-tertiary dark:text-white">Osaka</p>
+              <p class="card-info-subtitle text-tertiary dark:text-white">Beautiful temples</p>
+            </div>
+          </div>
+          <div class="card">
+            <div class="card-cover bg-okayama bg-center"></div>
+            <div class="card-info bg-secondary dark:bg-gray-700">
+              <p class="card-info-title text-white">Okayama</p>
+              <p class="card-info-subtitle text-white">Beautiful temples</p>
+            </div>
+          </div>
+          <div class="card">
+            <div class="card-cover bg-yokohama bg-center"></div>
+            <div class="card-info bg-white dark:bg-gray-800">
+              <p class="card-info-title text-tertiary dark:text-white">Yokohama</p>
+              <p class="card-info-subtitle text-tertiary dark:text-white">Beautiful temples</p>
+            </div>
+          </div>
+          <div class="card">
+            <div class="card-cover bg-sapporo bg-center"></div>
+            <div class="card-info bg-secondary dark:bg-gray-700">
+              <p class="card-info-title text-white">Sapporo</p>
+              <p class="card-info-subtitle text-white">Beautiful temples</p>
+            </div>
+          </div>
+          <div class="card">
+            <div class="card-cover bg-kitakyushu bg-center"></div>
+            <div class="card-info bg-white dark:bg-gray-800">
+              <p class="card-info-title text-tertiary dark:text-white">Kitakyushu</p>
+              <p class="card-info-subtitle text-tertiary dark:text-white">Beautiful temples</p>
+            </div>
+          </div>
+          <div class="card">
+            <div class="card-cover bg-fukuoka bg-center"></div>
+            <div class="card-info bg-secondary dark:bg-gray-700">
+              <p class="card-info-title text-white">Fukuoka</p>
+              <p class="card-info-subtitle text-white">Beautiful temples</p>
+            </div>
+          </div>
+          <div class="card">
+            <div class="card-cover bg-nagasaki bg-center"></div>
+            <div class="card-info bg-white dark:bg-gray-800">
+              <p class="card-info-title text-tertiary dark:text-white">Nagasaki</p>
+              <p class="card-info-subtitle text-tertiary dark:text-white">Beautiful temples</p>
+            </div>
+          </div>
+          <div class="card">
+            <div class="card-cover bg-miyazaki bg-center"></div>
+            <div class="card-info bg-secondary dark:bg-gray-700">
+              <p class="card-info-title text-white">Miyazaki</p>
+              <p class="card-info-subtitle text-white">Beautiful temples</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div id="featured" class="p-6 h-auto w-full">
+        <p
+          class="title-section dark:text-white"
+        >
+          Featured Sites in the Community
+        </p>
+        <div
+          class="w-full h-full items-center justify-center grid grid-cols-1 lg:grid-cols-2 lg:place-items-center gap-5"
+        >
+          <div class="card-feature bg-yokohama lg:col-span-2 bg-center">
+            <div class="card-feature-opacity">
+              <p class="card-feature-title">Yokohama</p>
+              <p class="card-feature-subtitle">Beautiful places</p>
+            </div>
+          </div>
+          <div
+            class="card-feature bg-kyoto bg-center lg:row-span-2 lg:h-[49rem]"
+          >
+            <div class="card-feature-opacity">
+              <p class="card-feature-title">Kyoto</p>
+              <p class="card-feature-subtitle">Beautiful places</p>
+            </div>
+          </div>
+          <div class="card-feature bg-kobe bg-center">
+            <div class="card-feature-opacity">
+              <p class="card-feature-title">Kobe</p>
+              <p class="card-feature-subtitle">Beautiful places</p>
+            </div>
+          </div>
+          <div class="card-feature bg-hiroshima bg-center">
+            <div class="card-feature-opacity">
+              <p class="card-feature-title">Hiroshima</p>
+              <p class="card-feature-subtitle">Beautiful places</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div id="faqs" class="p-6 h-full w-full">
+        <p class="title-section dark:text-white">FAQs</p>
+        <div
+          class="w-ful h-full space-y-5 grid grid-cols-1 lg:grid-cols-2 lg:place-items-center lg:gap-5 lg:py-10 lg:px-32"
+        >
+          <div>
+            <p class="text-primary text-xl font-base mb-2 dark:text-white">Payment Methods</p>
+            <p class="dark:text-gray-500">
+              We accept VISA, MasterCard, American Express, Paypal and Binance.
+            </p>
+          </div>
+          <div>
+            <p class="text-primary text-xl font-base mb-2 dark:text-white">
+              Cancellation Policy
+            </p>
+            <p class="dark:text-gray-500">
+              We accept VISA, MasterCard, American Express, Paypal and Binance.
+            </p>
+          </div>
+          <div>
+            <p class="text-primary text-xl font-base mb-2 dark:text-white">Long Stays</p>
+            <p class="dark:text-gray-500">
+              We accept VISA, MasterCard, American Express, Paypal and Binance.
+              <br />We accept VISA, MasterCard, American Express, Paypal and
+              Binance.
+            </p>
+          </div>
+          <div>
+            <p class="text-primary text-xl font-base mb-2 dark:text-white">Long Stays</p>
+            <p class="dark:text-gray-500">
+              We accept VISA, MasterCard, American Express, Paypal and Binance.
+              <br />We accept VISA, MasterCard, American Express, Paypal and
+              Binance.
+            </p>
+          </div>
+          <div>
+            <p class="text-primary text-xl font-base mb-2 dark:text-white">Long Stays</p>
+            <p class="dark:text-gray-500">
+              We accept VISA, MasterCard, American Express, Paypal and Binance.
+              <br />We accept VISA, MasterCard, American Express, Paypal and
+              Binance.
+            </p>
+          </div>
+          <div>
+            <p class="text-primary text-xl font-base mb-2 dark:text-white">Long Stays</p>
+            <p class="dark:text-gray-500">
+              We accept VISA, MasterCard, American Express, Paypal and Binance.
+              <br />We accept VISA, MasterCard, American Express, Paypal and
+              Binance.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer
+      id="about"
+      class="w-full h-auto bg-gray-100 p-6 pb-20 flex flex-col text-center gap-2 lg:flex-row lg:gap-24 lg:text-center lg:justify-center lg:pb-16 lg:pt-16 dark:bg-gray-700"
+    >
+      <a href="" class="text-base font-semibold text-gray-400 hover:text-primary">About us</a>
+      <a href="" class="text-base font-semibold text-gray-400 hover:text-primary"
+        >Inversion</a
+      >
+      <a href="" class="text-base font-semibold text-gray-400 hover:text-primary">Carriers</a>
+      <a href="" class="text-base font-semibold text-gray-400 hover:text-primary"
+        >Contact us</a
+      >
+    </footer>
+
+    <div
+      id="tab-bar"
+      class="w-full h-12 bg-primary fixed bottom-0 flex justify-center items-center shadow-md space-x-8 lg:hidden dark:bg-gray-800"
+    >
+      <a href="#home">
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          viewBox="0 0 20 20"
+          fill="currentColor"
+          class="size-5"
+        >
+          <path
+            fill-rule="evenodd"
+            d="M9.293 2.293a1 1 0 0 1 1.414 0l7 7A1 1 0 0 1 17 11h-1v6a1 1 0 0 1-1 1h-2a1 1 0 0 1-1-1v-3a1 1 0 0 0-1-1H9a1 1 0 0 0-1 1v3a1 1 0 0 1-1 1H5a1 1 0 0 1-1-1v-6H3a1 1 0 0 1-.707-1.707l7-7Z"
+            clip-rule="evenodd"
+            class="fill-current text-white"
+          />
+        </svg>
+      </a>
+      <a href="#recommended">
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          viewBox="0 0 20 20"
+          fill="currentColor"
+          class="size-5"
+        >
+          <path
+            fill-rule="evenodd"
+            d="M16.403 12.652a3 3 0 0 0 0-5.304 3 3 0 0 0-3.75-3.751 3 3 0 0 0-5.305 0 3 3 0 0 0-3.751 3.75 3 3 0 0 0 0 5.305 3 3 0 0 0 3.75 3.751 3 3 0 0 0 5.305 0 3 3 0 0 0 3.751-3.75Zm-2.546-4.46a.75.75 0 0 0-1.214-.883l-3.483 4.79-1.88-1.88a.75.75 0 1 0-1.06 1.061l2.5 2.5a.75.75 0 0 0 1.137-.089l4-5.5Z"
+            clip-rule="evenodd"
+            class="fill-current text-white"
+          />
+        </svg>
+      </a>
+      <a href="#featured">
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          viewBox="0 0 20 20"
+          fill="currentColor"
+          class="size-5"
+        >
+          <path
+            d="m9.653 16.915-.005-.003-.019-.01a20.759 20.759 0 0 1-1.162-.682 22.045 22.045 0 0 1-2.582-1.9C4.045 12.733 2 10.352 2 7.5a4.5 4.5 0 0 1 8-2.828A4.5 4.5 0 0 1 18 7.5c0 2.852-2.044 5.233-3.885 6.82a22.049 22.049 0 0 1-3.744 2.582l-.019.01-.005.003h-.002a.739.739 0 0 1-.69.001l-.002-.001Z"
+            class="fill-current text-white"
+          />
+        </svg>
+      </a>
+      <button id="toggle-sm">
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          viewBox="0 0 20 20"
+          fill="currentColor"
+          class="size-5"
+        >
+          <path
+            fill-rule="evenodd"
+            d="M7.455 2.004a.75.75 0 0 1 .26.77 7 7 0 0 0 9.958 7.967.75.75 0 0 1 1.067.853A8.5 8.5 0 1 1 6.647 1.921a.75.75 0 0 1 .808.083Z"
+            clip-rule="evenodd"
+            class="fill-current text-white"
+          />
+        </svg>
+      </button>
+      <a href="">
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          viewBox="0 0 20 20"
+          fill="currentColor"
+          class="size-5"
+        >
+          <path
+            d="M10 8a3 3 0 1 0 0-6 3 3 0 0 0 0 6ZM3.465 14.493a1.23 1.23 0 0 0 .41 1.412A9.957 9.957 0 0 0 10 18c2.31 0 4.438-.784 6.131-2.1.43-.333.604-.903.408-1.41a7.002 7.002 0 0 0-13.074.003Z"
+            class="fill-current text-white"
+          />
+        </svg>
+      </a>
+    </div>
+
+    <script>
+      const htmlElement = document.querySelector("html");
+      const toggleButton = document.querySelector("#toggle");
+      const toggleButtonSm = document.querySelector("#toggle-sm");
+
+      toggleButton.addEventListener("click", () => toggleDarkMode());
+      toggleButtonSm.addEventListener("click", () => toggleDarkMode());
+
+      const toggleDarkMode = () => {
+        htmlElement.classList.contains("dark")?
+        htmlElement.classList.remove("dark"):
+        htmlElement.classList.add("dark");
+      };
+    </script>
+  </body>
+</html>
